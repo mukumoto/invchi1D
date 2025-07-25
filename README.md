@@ -34,7 +34,7 @@ cmake --build . --target install
 The executable will be installed to:
 
 ```
-(...)/bin/invchi1D
+(...)/bin
 ```
 
 ---
