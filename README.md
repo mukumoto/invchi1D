@@ -115,7 +115,7 @@ You can reproduce the right panel of Fig. 10 in Mukumoto et al. 2025 by followin
 3. Run the program:
 
 ```bash
-./build/bin/invchi1D data.bin chi.txt params.txt
+(...)/bin/invchi1D data.bin chi.txt params.txt
 ```
 
 With `params.txt`:
