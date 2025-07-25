@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.12)
+project(invchi1D LANGUAGES CXX)
+
+add_compile_options(-Wall -Wextra -Wpedantic)
+
+find_package(Armadillo REQUIRED)
+
+include_directories(include)
+
+# Source files
+set(SOURCES
+    src/invchi1D.cpp
+    src/invchi.cpp
+    src/utils.cpp
+)
+
+add_executable(invchi1D ${SOURCES})
+
+target_link_libraries(invchi1D PRIVATE ${ARMADILLO_LIBRARIES})
+
+
+install(TARGETS invchi1D
+        RUNTIME DESTINATION bin)
