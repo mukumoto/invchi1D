@@ -59,7 +59,7 @@ void rdfs_stretched(arma::vec& x, arma::cx_vec& X, double theta, int order, arma
     }
     
     double  M = theta*T;
-    int N = order*2 -2;
+    int N = order*2 -1;
 
     arma::cx_mat W(T, N, arma::fill::zeros);
 
